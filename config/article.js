@@ -19,18 +19,18 @@ export default _ => ({ // eslint-disable-line
 
   topic: {
     name: 'Magazine',
-    url: '/foo',
+    url: 'http://www.ft.com/magazine',
   },
 
   relatedArticle: {
     text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    url: 'http://www.ft.com/cms/s/bf2a2c16-6eb4-11e6-a0c9-1365ce54b926.html',
   },
 
   mainImage: {
-    title: '',
-    description: '',
-    url: '',
+    title: 'Big Bang II',
+    description: '© Matt Chase',
+    url: 'https://ig.ft.com/static/future-of-the-city/images/FTbigbang.jpg',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
   },
@@ -43,10 +43,10 @@ export default _ => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: '',
+  title: 'HERE COMES THE TITLE',
 
   // meta data
-  description: '',
+  description: 'HERE COMES DESCRIPTION',
 
   /*
   TODO: Select Twitter card type -
@@ -62,18 +62,18 @@ export default _ => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: '',
+  // socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
-  // twitterImage: '',
-  // twitterCreator: '@individual's_account',
+  // twitterImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
+  // twitterCreator: '@FTMag',
   // tweetText:  '',
-  // twitterHeadline:  '',
+  // twitterHeadline:  'Big Bang II: what\'s next for the City?',
 
   // FACEBOOK
-  // facebookImage: '',
+  // facebookImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
   // facebookHeadline: '',
 
   onwardjourney: {
