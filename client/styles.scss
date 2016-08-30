@@ -44,9 +44,7 @@ h2 {
 .person {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  margin-left: 1em;
-  margin-right: 50px;
-  padding: 1.25em 1em;
+  padding: 2.25em 2em;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -80,10 +78,9 @@ h2 {
 
   &__description > p {
       font-family: FinancierDisplayWeb, serif;
-      font-size: 21px;
-      line-height: 28px;
+      font-size: 18px;
       color: rgb(80, 80, 80);
-      line-height: 28px;
+      line-height: 24.87px;
       margin: 4px 0px;
       display: block;
       //-webkit-margin-before: 1em;
@@ -98,7 +95,7 @@ h2 {
 
 .image-holder {
   float: left;
-  margin-left: 50px;
+  //margin-left: 50px;
   margin-right: 1em;
   border-radius: 4px;
 }
