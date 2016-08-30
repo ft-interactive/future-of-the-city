@@ -11,14 +11,14 @@ export default _ => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'Big Bang II: what\'s next for the City?',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Political language is designed to make lies sound truthful' +
            'and murder respectable, and to give an appearance of solidity to pure wind',
 
   topic: {
-    name: 'Starter Kit',
+    name: 'Magazine',
     url: '/foo',
   },
 
@@ -38,8 +38,8 @@ export default _ => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Harriet Agnew', url: 'http://search.ft.com/search?queryText=harriet+agnew' },
+    { name: 'Patrick Jenkins', url: 'http://search.ft.com/search?queryText=Patrick+Jenkins' },
   ],
 
   // Appears in the HTML <title>

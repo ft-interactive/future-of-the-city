@@ -1,16 +1,185 @@
 @import 'o-colors/main';
 @import 'components/core/main';
 
-/*
-      TODO: delete this comment
+// group names
+h2 {
+  font-family: MetricWeb, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+}
 
-      Write your code here - keep it neat!
-      Split logical parts of you project into components e.g.
 
-      /client
-        - /components
-            - /component-name
-                - styles.scss
-                - index.js
-                - template.html
-*/
+.group {
+  max-width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 2px 1px;
+  padding-top: 1.5em;
+  background: rgb(255, 251, 247);
+  margin: 0px auto 1.5em;
+  display: block;
+
+  h2 { //person name
+    font-family: MetricWeb, sans-serif;
+    font-size: 1.5em;
+    color: #333333;
+    line-height: 22px;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: capitalize;;
+  }
+
+  *:last-child {
+    border-bottom: none;
+  }
+}
+
+.card__body {
+  overflow: hidden;
+  margin: 0;
+
+}
+
+.person {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-left: 1em;
+  margin-right: 50px;
+  padding: 1.25em 1em;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e9decf;
+
+  &__name {
+  font-family: MetricWeb, sans-serif;
+  font-size: 1.5em;
+  color: #333333;
+  line-height: 22px;
+  margin: 0;
+  font-weight: 500;
+  }
+
+
+  &__title { // this doesn't seem to be pulled in
+  font-family: MetricWeb, sans-serif;
+  font-weight: 500;
+  color: rgb(167, 165, 155);
+  font-size: 1.25em;
+  line-height: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+
+  &__image {
+    width: 100px;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  &__description > p {
+      font-family: FinancierDisplayWeb, serif;
+      font-size: 21px;
+      line-height: 28px;
+      color: rgb(80, 80, 80);
+      line-height: 28px;
+      margin: 4px 0px;
+      display: block;
+      //-webkit-margin-before: 1em;
+      //-webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+}
+
+.image-holder {
+  float: left;
+  margin-left: 50px;
+  margin-right: 1em;
+  border-radius: 4px;
+}
+
+// @include oGridRespondTo(S) {
+//   .img-holder,
+//   .card__body {
+//     margin-left: 20px;
+//   }
+//
+//   .person {
+//     padding-right: 50px;
+//   }
+// }
+//
+//
+//  @include oGridRespondTo(M) {
+//   .img-holder,
+//   .card__body {
+//     margin-left: 50px;
+//   }
+//
+//   .img-holder img {
+//     width: 100px;
+//     height: auto;
+//   }
+//
+//   .title {
+//     font-size: 18px;
+//     line-height: 22px;
+//   }
+//   .person__name {
+//     font-size: 22px;
+//     line-height: 22px;
+//   }
+//
+//   .person__description {
+//     font-size: 21px;
+//     line-height: 28px;
+//   }
+//
+//   .person__name {
+//     font-size: 1.5em;
+//   }
+//
+//   .group-heading {
+//     font-size: 1.25em;
+//
+//     &:after {
+//       display: block;
+//       width: 80px;
+//     }
+//   }
+//   .card {
+//     padding-top: 2.1em;
+//     padding-bottom: 2.1em;
+//   }
+// }
+//
+//  @include oGridRespondTo(L) {
+//   .headline {
+//     max-width: 370px;
+//     padding: 16px 40px;
+//     font-size: 2.5em;
+//     margin-bottom: -24px;
+//   }
+//
+//   .img-holder,
+//   .winner .card__body {
+//     margin-left: 100px;
+//   }
+//   .card {
+//     padding-right: 100px;
+//   }
+//
+//   .img-holder img {
+//     width: 100px;
+//     height: 100px;
+//   }
+//
+//   .winner .name {
+//     font-size: 2em;
+//   }
+// }

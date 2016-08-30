@@ -1,11 +1,24 @@
 import article from './article';
 import flags from './flags';
 import people from './people';
+import _ from 'lodash';
 
 export default async function() {
   const d = await article();
   const f = await flags();
 
+  const groups = _.groupBy(people, person => person.category);
+  const groupNames = _.sortBy(_.uniq(people.map(p => p.category)));
+
+  const sortedGroups = groupNames.map(name => {
+    return {
+      name: name,
+      list: groups[name]
+    };
+  });
+
+
+  console.log(sortedGroups)
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
@@ -30,7 +43,7 @@ export default async function() {
 
   return {
     ...d,
-    people,
+    groups: sortedGroups,
     flags: f,
   };
 }
