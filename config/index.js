@@ -1,5 +1,6 @@
 import article from './article';
 import flags from './flags';
+import people from './people';
 
 export default async function() {
   const d = await article();
@@ -29,6 +30,7 @@ export default async function() {
 
   return {
     ...d,
+    people,
     flags: f,
   };
 }
