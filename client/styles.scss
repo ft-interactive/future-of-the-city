@@ -2,7 +2,8 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
-.article-body > :not(.graphic) {
+.article-body {
+  .article-body > :not(.graphic) {
     max-width: 625px;
     margin: 0 auto;
     padding: 1.2em 0.75em 0.5em;
@@ -112,6 +113,45 @@
   border-radius: 4px;
 }
 
+
+#link {
+  color: #ffffff;
+}
+
+.person__url {
+      display: block;
+      background-color: #9b164f;
+      text-align: left;
+      margin-right: 12px;
+      margin-top: 10px;
+      font-size: 1rem;
+      width: 114px;
+      font-weight: 500;
+      padding-left: 16px;
+      height: 28px;
+      line-height: 26px;
+      box-sizing: border-box;
+      float: right;
+      color: 'white';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+
+      &:after {
+        content: " ";
+        background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
+        background-size: 20px 20px;
+        position: absolute;
+        bottom: 33px;
+        right: 44px;
+        width: 20px;
+        height: 20px;
+        margin: 0 7px 8px 0;
+      }
+    }
+
+
+
 // oGrid changes
 
 // @include oGridRespondTo(S) { // doesn't seem to be working
@@ -153,11 +193,6 @@
     line-height: 30px;
         -webkit-font-smoothing: antialiased;
   }
-
-  .person{
-     padding: 2.25em 2em;
-  }
-
   .person__name {
     font-size: 22px;
     line-height: 22px;
@@ -166,12 +201,10 @@
   .person__description {
     font-size: 21px;
     line-height: 28px;
-
   }
 
   .person__name {
     font-size: 1.5em;
-
     -webkit-font-smoothing: antialiased;
   }
 
@@ -187,21 +220,31 @@
     padding-top: 2.1em;
     padding-bottom: 2.1em;
   }
+
+
+  .person__url {
+        &:after {
+          bottom: 31px;
+          right: 44px;
+        }
+      }
+
 }
 
- @include oGridRespondTo(L) {
+
+@include oGridRespondTo(L) {
 
   .article-body > :not(.graphic) {
-   
     padding: 1.8em 0.75em 0.5em;
-}
+ }
+
 
   .image-holder,
   .card__body {
     overflow: hidden;
   }
   .person {
-     padding: 2.25em 2em;
+    padding: 2.25em 2em;
   }
 
   .title {
@@ -217,10 +260,16 @@
   .person__name {
     font-size: 2em;
   }
+
   .o-typography-body-wrapper h2 {
- 
-  font-size: 1.3em;
+    font-size: 1.3em;
+  }
 
+  .person__url {
+        &:after {
+          bottom: 30px;
+          right: 50px;
+        }
+      }
 
-}
-}
+}}
