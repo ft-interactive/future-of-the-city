@@ -43,7 +43,7 @@ export default _ => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'HERE COMES THE TITLE',
+  title: 'The 30 most influential people in the City of London',
 
   // meta data
   description: 'HERE COMES DESCRIPTION',
@@ -62,19 +62,19 @@ export default _ => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
-  // socialHeadline: 'Who are the 30 most influential people in the City of London?',
-  // socialSummary:  '',
+  socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
+  socialHeadline: 'The 30 most influential people in the City of London',
+  socialSummary:  'Big Bang II: what\'s next for the City?',
   //
   // TWITTER
-  // twitterImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
+  twitterImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
   // twitterCreator: '@FTMag',
-  // tweetText:  'Big Bang II: what\'s next for the City?',
-  // twitterHeadline:  'The 30 most influential people in the City of London #FTCityList ',
+  tweetText: 'The 30 most influential people in the City of London #FTCityList ',
+  twitterHeadline: 'Big Bang II: what\'s next for the City?',
   //
   // FACEBOOK
-  // facebookImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
-  // facebookHeadline: 'Who are the 30 most influential people in the City of London?',
+  facebookImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
+  facebookHeadline: 'Who are the 30 most influential people in the City of London?',
 
   onwardjourney: {
 
