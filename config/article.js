@@ -11,11 +11,11 @@ export default _ => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Big Bang II: what\'s next for the City?',
+  headline: 'Big Bang II: the City of London\'s most influential people',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'Thirty years ago, Margaret Thatcher\'s Big Bang reforms transformed London\'s financial sector. ' +
+           'Today the Brexit vote is set to cause a similar revolution. In our exclusive list, the FT profiles the 30 men and women who will shape the City\'s future.', //how to put links here
 
   topic: {
     name: 'Magazine',
@@ -46,7 +46,7 @@ export default _ => ({ // eslint-disable-line
   title: 'The 30 most influential people in the City of London',
 
   // meta data
-  description: 'HERE COMES DESCRIPTION',
+  description: 'FT profiles the 30 men and women who will shape the City\'s future.',
 
   /*
   TODO: Select Twitter card type -
