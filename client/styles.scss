@@ -27,11 +27,10 @@ h2 {
 
   h2 { //person name
     font-family: MetricWeb, sans-serif;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #333333;
     line-height: 22px;
     margin: 0;
-    margin-bottom: 7px;
     font-weight: 500;
     letter-spacing: normal;
     text-transform: capitalize;
@@ -76,9 +75,9 @@ h2 {
   color: rgb(167, 165, 155);
   font-size: 1.25em;
   line-height: 20px;
-  overflow: hidden
-  //-webkit-font-smoothing: antialiased;
-  //-moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   }
 
   &__image {
@@ -106,7 +105,6 @@ h2 {
 
 .image-holder {
   float: left;
-  margin-left: 0;
   margin-right: 1em;
   border-radius: 4px;
 }
@@ -139,7 +137,6 @@ h2 {
  @include oGridRespondTo(M) {
   .image-holder,
   .card__body {
-    margin-left: 50px;
     overflow: visible;
   }
 
@@ -151,6 +148,7 @@ h2 {
   .title {
     font-size: 18px;
     line-height: 30px;
+        -webkit-font-smoothing: antialiased;
   }
   .person__name {
     font-size: 22px;
@@ -164,6 +162,7 @@ h2 {
 
   .person__name {
     font-size: 1.5em;
+    -webkit-font-smoothing: antialiased;
   }
 
   h2 {
@@ -184,11 +183,10 @@ h2 {
 
   .image-holder,
   .card__body {
-    margin-left: 50px;
     overflow: hidden;
   }
   .person {
-    padding-right: 100px;
+    padding-right: 40px;
   }
 
   .title {
@@ -197,8 +195,8 @@ h2 {
   }
 
   .image-holder img {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
   }
 
   .person__name {
