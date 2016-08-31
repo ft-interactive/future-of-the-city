@@ -10,6 +10,13 @@
     <h2 class="person__name">{{ person.name }}</h2>
     <div class="person__title">{{ person.title }}</div>
     <div class="person__description">{{ person.description | md }}</div>
+    {% if person.linkurl %}
+    <div class="person__url"><span="link"><a href="{{ person.linkurl }}" id="link">
+      Full profile
+      <div class="arrow"></div></a></span>
+    </div>
+    {% else %}
+    {% endif %}
   </div>
 </div>
 {% endmacro %}
