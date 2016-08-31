@@ -2,6 +2,10 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
+body {
+  padding-left: 5px;
+}
+
 .article-body > :not(.graphic) {
    max-width: 625px;
    margin: 0 auto;

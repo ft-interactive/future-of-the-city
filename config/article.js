@@ -63,18 +63,18 @@ export default _ => ({ // eslint-disable-line
   */
   // General social
   // socialImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
-  // socialHeadline: '',
+  // socialHeadline: 'Who are the 30 most influential people in the City of London?',
   // socialSummary:  '',
-
+  //
   // TWITTER
   // twitterImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
   // twitterCreator: '@FTMag',
-  // tweetText:  '',
-  // twitterHeadline:  'Big Bang II: what\'s next for the City?',
-
+  // tweetText:  'Big Bang II: what\'s next for the City?',
+  // twitterHeadline:  'The 30 most influential people in the City of London #FTCityList ',
+  //
   // FACEBOOK
   // facebookImage: 'https://image.webservices.ft.com/v1/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Ffuture-of-the-city%2Fimages%2FFTbigbang.jpg?source=test&width=600&height=300&fit=scale-down&format=jpg&quality=high',
-  // facebookHeadline: '',
+  // facebookHeadline: 'Who are the 30 most influential people in the City of London?',
 
   onwardjourney: {
 

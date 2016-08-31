@@ -11,10 +11,10 @@
     <div class="person__title">{{ person.title }}</div>
     <div class="person__description">{{ person.description | md }}</div>
     {% if person.linkurl %}
-    <div class="person__url"><span="link"><a href="{{ person.linkurl }}" id="link">
+    <a href="{{ person.linkurl }}" id="link"><div class="person__url">
       Full profile
-      <div class="arrow"></div></a></span>
-    </div>
+      <div class="arrow"></div>
+    </div></a>
     {% else %}
     {% endif %}
   </div>
