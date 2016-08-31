@@ -109,6 +109,44 @@ h2 {
   border-radius: 4px;
 }
 
+// no idea how to overwrite the
+#link {
+  color: #ffffff;
+}
+
+.person__url {
+      display: block;
+      background-color: #9b164f;
+      text-align: left;
+      margin-right: 12px;
+      margin-top: 10px;
+      font-size: 1rem;
+      width: 114px;
+      font-weight: 500;
+      padding-left: 16px;
+      height: 28px;
+      line-height: 26px;
+      box-sizing: border-box;
+      float: right;
+      color: 'white';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+
+      &:after {
+        content: " ";
+        background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
+        background-size: 20px 20px;
+        position: absolute;
+        bottom: 33px;
+        right: 44px;
+        width: 20px;
+        height: 20px;
+        margin: 0 7px 8px 0;
+      }
+    }
+
+
 // oGrid changes
 
 // @include oGridRespondTo(S) { // doesn't seem to be working
@@ -177,7 +215,17 @@ h2 {
     padding-top: 2.1em;
     padding-bottom: 2.1em;
   }
+
+
+  .person__url {
+        &:after {
+          bottom: 31px;
+          right: 44px;
+        }
+      }
+
 }
+
 
  @include oGridRespondTo(L) {
 
@@ -202,4 +250,13 @@ h2 {
   .person__name {
     font-size: 2em;
   }
+
+
+  .person__url {
+        &:after {
+          bottom: 30px;
+          right: 50px;
+        }
+      }
+
 }
