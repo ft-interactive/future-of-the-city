@@ -4,6 +4,13 @@
 
 <h1 class="o-typography-heading1" itemprop="headline">{{ headline | md(true) }}</h1>
 
+<figure>
+  <img alt="" src="master.jpg" style="width: 100%" style="float:left"></img>
+  <figcaption class="o-typography-caption">
+    © Matt Chase
+  </figcaption>
+</figure>
+<!-- <div class="topImage"><img src="master.jpg" class="mainImage"/></div> -->
 <p class="o-typography-lead">
   {{ summary | md(true) }}
   {% if relatedArticle %}
