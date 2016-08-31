@@ -14,8 +14,8 @@ export default _ => ({ // eslint-disable-line
   headline: 'Big Bang II: the City of London\'s most influential people',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Thirty years ago, Margaret Thatcher\'s Big Bang reforms transformed London\'s financial sector. ' +
-           'Today the Brexit vote is set to cause a similar revolution. In our exclusive list, the FT profiles the 30 men and women who will shape the City\'s future.', //how to put links here
+  summary: 'The Brexit vote is set to cause a revolution in the City. ' +
+           'In our exclusive list, the FT profiles the 30 people who will shape its future',
 
   topic: {
     name: 'Magazine',
