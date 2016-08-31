@@ -2,22 +2,21 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
-.article-body {
-  .article-body > :not(.graphic) {
-    max-width: 625px;
-    margin: 0 auto;
-    padding: 1.2em 0.75em 0.5em;
+.article-body > :not(.graphic) {
+   max-width: 625px;
+   margin: 0 auto;
+   padding: 1.2em 0.75em 0.5em;
 }
 
 // group names
 .o-typography-body-wrapper h2 {
-  font-family: MetricWeb, sans-serif;
-  font-weight: 500;
-  font-size: 1.3em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
+ font-family: MetricWeb, sans-serif;
+ font-weight: 500;
+ font-size: 1.3em;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ display: block;
+ text-align: center;
 }
 
 
@@ -143,7 +142,7 @@
         background-size: 20px 20px;
         position: absolute;
         bottom: 33px;
-        right: 44px;
+        right: 28px;
         width: 20px;
         height: 20px;
         margin: 0 7px 8px 0;
@@ -225,7 +224,7 @@
   .person__url {
         &:after {
           bottom: 31px;
-          right: 44px;
+          right: 28px;
         }
       }
 
@@ -267,9 +266,9 @@
 
   .person__url {
         &:after {
-          bottom: 30px;
-          right: 50px;
+          bottom: 32px;
+          right: 45px;
         }
       }
 
-}}
+}
