@@ -77,17 +77,6 @@ margin-right: 0;
   box-sizing: border-box;
   border-bottom: 1px solid #e9decf;
 
-
-  // &__name {
-  // font-family: MetricWeb, sans-serif;
-  // font-size: 1.6em;
-  // color: #333333;
-  // line-height: 17.7px;
-  // margin: 0;
-  // font-weight: 500;
-  // }
-
-
   &__title { // this doesn't seem to be pulled in
   font-family: MetricWeb, sans-serif;
   font-weight: 400;
@@ -103,6 +92,9 @@ margin-right: 0;
     width: 85px;
     height: auto;
     vertical-align: bottom;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
   }
 
   &__description > p {
@@ -125,6 +117,8 @@ margin-right: 0;
 .image-holder {
   float: left;
   margin-right: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
