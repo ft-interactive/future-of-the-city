@@ -2,14 +2,17 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
-.article-body {
-  padding: 0 10px 0 10px;
+.article-body > :not(.graphic) {
+    max-width: 625px;
+    margin: 0 auto;
+    padding: 1.2em 0.75em 0.5em;
 }
 
 // group names
-h2 {
+.o-typography-body-wrapper h2 {
   font-family: MetricWeb, sans-serif;
   font-weight: 500;
+  font-size: 1.3em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   display: block;
@@ -22,7 +25,7 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 2px 1px;
   //padding-top: 1.5em;
   background: rgb(255, 251, 247);
-  //margin: 0px auto 1.5em;
+  margin: 0 auto 1.5em;
   display: block;
 
   h2 { //person name
@@ -52,7 +55,7 @@ h2 {
 .person {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 2.25em 2em;
+  padding: 2.25em 1em;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -150,6 +153,11 @@ h2 {
     line-height: 30px;
         -webkit-font-smoothing: antialiased;
   }
+
+  .person{
+     padding: 2.25em 2em;
+  }
+
   .person__name {
     font-size: 22px;
     line-height: 22px;
@@ -158,10 +166,12 @@ h2 {
   .person__description {
     font-size: 21px;
     line-height: 28px;
+
   }
 
   .person__name {
     font-size: 1.5em;
+
     -webkit-font-smoothing: antialiased;
   }
 
@@ -181,12 +191,17 @@ h2 {
 
  @include oGridRespondTo(L) {
 
+  .article-body > :not(.graphic) {
+   
+    padding: 1.8em 0.75em 0.5em;
+}
+
   .image-holder,
   .card__body {
     overflow: hidden;
   }
   .person {
-    padding-right: 40px;
+     padding: 2.25em 2em;
   }
 
   .title {
@@ -202,4 +217,10 @@ h2 {
   .person__name {
     font-size: 2em;
   }
+  .o-typography-body-wrapper h2 {
+ 
+  font-size: 1.3em;
+
+
+}
 }
