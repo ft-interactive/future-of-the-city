@@ -2,10 +2,32 @@
 @import 'components/core/main';
 @import 'o-grid/main';
 
+h1.o-typography-heading1 {
+  font-size: 36px;
+  color: #333333;
+  line-height: 33px;
+}
+
+header > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.o-typography-lead {
+  font-family: MetricWeb, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
 
 figure {
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+
+figcaption.o-typography-caption {
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 
 .article-body > :not(.graphic) {
@@ -14,9 +36,9 @@ figure {
    padding: 1.2em 0.75em 0.5em;
 }
 
-div.article-body > h2:first-child {
-  padding-top: 0;
-}
+// div.article-body > h2:first-child {
+//   padding-top: 0;
+// }
 
 .article-head {
   margin-bottom: 0;
@@ -82,6 +104,8 @@ div.article-body > h2:first-child {
   font-size: 1.25em;
   line-height: 20px;
   overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 3px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
@@ -97,9 +121,9 @@ div.article-body > h2:first-child {
 
   &__description > p {
       font-family: FinancierDisplayWeb, serif;
-      font-size: 18px;
+      font-size: 19px;
       color: rgb(80, 80, 80);
-      line-height: 24.87px;
+      line-height: 26px;
       margin: 4px 0px;
       display: block;
       //-webkit-margin-before: 1em;
@@ -118,74 +142,49 @@ div.article-body > h2:first-child {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background: rgba(0,255,255, 0.5);
-  //z-index: 100;
 }
-
-
 
 #link {
   color: #ffffff;
 }
 
-.person__url {
+.person__url{
+  padding-top: 3px;
+  text-align: left;
+}
+
+.link-button{ // this is wrapping
       display: block;
       background-color: #9b164f;
-      text-align: left;
+      text-align: center;
       margin-right: 12px;
-      margin-top: 10px;
-      font-size: 1rem;
+      margin-top: 15px;
+      font-size: 1.05rem;
       width: 164px;
-      font-weight: 500;
+      font-weight: 400;
       padding-left: 16px;
-      height: 28px;
+      height: 36px;
       line-height: 26px;
       box-sizing: border-box;
       float: right;
       color: 'white';
+      border-radius: 4px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
 
 
-      &:after {
+      &:after { // this is arrow style
         content: " ";
         background: url('https://image.webservices.ft.com/v1/images/raw/fticon:arrow-right?height=44&tint=ffffff,ffffff&source=ig_wrr') no-repeat center center;
-        background-size: 20px 20px;
+        background-size: 16px 16px;
         position: absolute;
-        bottom: 33px;
+        bottom: 39px;
         right: 28px;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         margin: 0 7px 8px 0;
       }
     }
-
-
-
-// oGrid changes
-
-// @include oGridRespondTo(S) { // doesn't seem to be working
-//   .image-holder,
-//   .card__body {
-//     margin-left: 0;
-//     // overflow: visible;
-//   }
-//
-//   .card__body {
-//     overflow: visible;
-//     color: red;
-// }
-//
-//   .image-holder img {
-//     width: 80px;
-//     height: auto;
-//   }
-//
-//   .person {
-//     padding-right: 30px;
-//   }
-// }
-
 
  @include oGridRespondTo(M) {
 
@@ -233,9 +232,9 @@ div.article-body > h2:first-child {
   }
 
 
-  .person__url {
+  .link-button {
         &:after {
-          bottom: 30px;
+          bottom: 36px;
           right: 28px;
         }
       }
@@ -244,6 +243,15 @@ div.article-body > h2:first-child {
 
 
 @include oGridRespondTo(L) {
+  h1.o-typography-heading1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .o-typography-lead{
+    font-size: 26px;
+    line-height: 27px;
+  }
 
   .article-body > :not(.graphic) {
     padding: 1.8em 0.75em 0.5em;
@@ -276,9 +284,9 @@ div.article-body > h2:first-child {
     font-size: 1.3em;
   }
 
-  .person__url {
+  .link-button {
         &:after {
-          bottom: 32px;
+          bottom: 39px;
           right: 45px;
         }
       }

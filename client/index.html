@@ -11,10 +11,10 @@
     <div class="person__title">{{ person.title }}</div>
     <div class="person__description">{{ person.description | md }}</div>
     {% if person.linkurl %}
-    <a href="{{ person.linkurl }}" id="link"><div class="person__url">
+    <div class="link-button"><a href="{{ person.linkurl }}" id="link"><div class="person__url">
       In their own words
       <div class="arrow"></div>
-    </div></a>
+    </div></a></div>
     {% else %}
     {% endif %}
   </div>
