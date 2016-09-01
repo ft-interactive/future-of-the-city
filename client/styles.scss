@@ -4,24 +4,22 @@
 
 
 figure {
-margin-left: 0;
-margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
-
-
-// .mainImage {
-//   max-width: 91%;
-// }
-//
-// .topImage  {
-//   width: 100%;
-//   height: auto;
-// }
 
 .article-body > :not(.graphic) {
    max-width: 625px;
    margin: 0 auto;
    padding: 1.2em 0.75em 0.5em;
+}
+
+div.article-body > h2:first-child {
+  padding-top: 0;
+}
+
+.article-head {
+  margin-bottom: 0;
 }
 
 // group names
@@ -121,7 +119,7 @@ margin-right: 0;
   -moz-border-radius: 4px;
   border-radius: 4px;
   background: rgba(0,255,255, 0.5);
-  z-index: 100;
+  //z-index: 100;
 }
 
 
@@ -137,7 +135,7 @@ margin-right: 0;
       margin-right: 12px;
       margin-top: 10px;
       font-size: 1rem;
-      width: 114px;
+      width: 164px;
       font-weight: 500;
       padding-left: 16px;
       height: 28px;
