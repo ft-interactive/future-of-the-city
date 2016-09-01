@@ -23,7 +23,7 @@ export default _ => ({ // eslint-disable-line
   },
 
   relatedArticle: {
-    text: 'Related article »',
+    text: 'Read introduction »',
     url: 'http://www.ft.com/cms/s/bf2a2c16-6eb4-11e6-a0c9-1365ce54b926.html',
   },
 
