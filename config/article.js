@@ -11,7 +11,7 @@ export default _ => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Big Bang II: the City of London\'s most influential people',
+  headline: 'The FT selects the City\'s most influential people',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'The Brexit vote is set to cause a revolution in the City. ' +
