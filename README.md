@@ -1,6 +1,6 @@
-# [future-of-the-city](https://ig.ft.com/sites/future-of-the-city)
+# [Future of the City list](https://ig.ft.com/sites/future-of-the-city)
 
-> London big bang list
+> London big bang list for FT Magazine of 3 September 2016.
 
 [![Build Status][circle-image]][circle-url] [![Dependency Status][devdeps-image]][devdeps-url]
 
